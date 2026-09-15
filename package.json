@@ -1,0 +1,27 @@
+{
+  "name": "linkedin-ai-agent",
+  "version": "1.0.0",
+  "description": "Comprehensive AI agent for LinkedIn profile optimization using Claude AI",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "optimize-profile": "ts-node src/features/profileOptimizer.ts",
+    "generate-posts": "ts-node src/features/postGenerator.ts",
+    "analyze-engagement": "ts-node src/features/engagementAnalyzer.ts",
+    "career-advisor": "ts-node src/features/careerAdvisor.ts",
+    "connection-strategy": "ts-node src/features/connectionStrategy.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "nodemon": "^3.0.0"
+  }
+}
